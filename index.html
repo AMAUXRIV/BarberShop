@@ -25,6 +25,10 @@
 
         <link href="css/templatemo-barber-shop.css" rel="stylesheet">
 
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+        <script src="https://kit.fontawesome.com/a1d7e79672.js" crossorigin="anonymous"></script>
+
     </head>
     
     <body>
@@ -32,7 +36,7 @@
         <div class="container-fluid">
             <div class="row">
 
-                <button class="navbar-toggler d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler d-md-none collapsed " type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
@@ -40,7 +44,7 @@
 
                     <div class="position-sticky sidebar-sticky d-flex flex-column justify-content-center align-items-center">
                         <a class="navbar-brand" href="index.html">
-                            <img src="images/logoBR.png" class="logo-image img-fluid" align="">
+                            <img src="images/logoBR.png" class="logo-image img-fluid fa-beat" style="--fa-animation-duration: 4s;"  align="">
                         </a>
 
                         <ul class="nav flex-column">
@@ -74,17 +78,19 @@
                                 <div class="row">
 
                                     <div class="col-lg-8 col-12">
-                                        <h1 class="text-white mb-lg-3 mb-4"><strong>Bashier <em>Shop</em></strong></h1>
+                                        <h1 class="text-white mb-lg-3 mb-4" data-aos="fade-right"><strong>Bashier <em>Shop</em></strong></h1>
                                         <p class="text-black">Pelayanan Pangkas Rambut Profesional</p>
                                         <br>
-                                        <a class="btn custom-btn custom-border-btn custom-btn-bg-white smoothscroll me-2 mb-2" href="#section_2">Tentang</a>
+                                        <a class="btn custom-btn custom-border-btn custom-btn-bg-white smoothscroll me-2 mb-2" href="#section_2" data-aos="fade-up">Tentang</a>
 
-                                        <a class="btn custom-btn smoothscroll mb-2" href="#section_3">Bisa apa</a>
+                                        <a class="btn custom-btn smoothscroll mb-2" href="#section_3" data-aos="fade-up">Bisa apa</a>
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="custom-block d-lg-flex flex-column justify-content-center align-items-center">
+                            <div class="custom-block d-lg-flex flex-column justify-content-center align-items-center" data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1500">
                                 <img src="images/vintage-chair-barbershop.jpg" class="custom-block-image img-fluid" alt="">
 
                                 <h4><strong class="text-white">Memangkas Sesuai Permintaan Anda</strong></h4>
@@ -108,7 +114,7 @@
 
                                     <h6 class="mb-5">Profil Barber</h6>
 
-                                        <div class="col-lg-5 col-12 custom-block-bg-overlay-wrap me-lg-5 mb-5 mb-lg-0">
+                                        <div class="col-lg-5 col-12 custom-block-bg-overlay-wrap me-lg-5 mb-5 mb-lg-0" data-aos="zoom-in">
                                             <img src="images/barber/portrait-male-hairdresser-with-scissors.jpg" class="custom-block-bg-overlay-image img-fluid" alt="">
 
                                             <div class="team-info d-flex align-items-center flex-wrap">
@@ -184,9 +190,9 @@
                                     <h2 class="mb-5">Pelayanan</h2>
                                 </div>
 
-                                <div class="col-lg-6 col-12 mb-4">
+                                <div class="col-lg-6 col-12 mb-4" data-aos="fade-down-right">
                                     <div class="services-thumb">
-                                        <img src="images/services/woman-cutting-hair-man-salon.jpg" class="services-image img-fluid" alt="">
+                                        <img src="images/services/woman-cutting-hair-man-salon.jpg" class="services-image img-fluid" alt="" >
 
                                         <div class="services-info d-flex align-items-end">
                                             <h4 class="mb-0">Pangkas</h4>
@@ -196,7 +202,7 @@
                                     </div>
                                 </div>
 
-                                <div class="col-lg-6 col-12 mb-4">
+                                <div class="col-lg-6 col-12 mb-4" data-aos="fade-down-left">
                                     <div class="services-thumb">
                                         <img src="images/services/hairdresser-grooming-their-client.jpg" class="services-image img-fluid" alt="">
 
@@ -208,9 +214,9 @@
                                     </div>
                                 </div>
 
-                                <div class="col-lg-6 col-12 mb-4 mb-lg-0">
+                                <div class="col-lg-6 col-12 mb-4 mb-lg-0" data-aos="fade-down-right">
                                     <div class="services-thumb">
-                                        <img src="images/services/hairdresser-grooming-client.jpg" class="services-image img-fluid" alt="">
+                                        <img src="images/services/hairdresser-grooming-client.jpg" class="services-image img-fluid" alt="" >
 
                                         <div class="services-info d-flex align-items-end">
                                             <h4 class="mb-0">Perawatan Jenggot</h4>
@@ -220,7 +226,7 @@
                                     </div>
                                 </div>
 
-                                <div class="col-lg-6 col-12">
+                                <div class="col-lg-6 col-12" data-aos="fade-down-left">
                                     <div class="services-thumb">
                                         <img src="images/services/boy-getting-haircut-salon-front-view.jpg" class="services-image img-fluid" alt="">
 
@@ -486,6 +492,10 @@
         <script src="js/bootstrap.min.js"></script>
         <script src="js/click-scroll.js"></script>
         <script src="js/custom.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
     </body>
 </html>
